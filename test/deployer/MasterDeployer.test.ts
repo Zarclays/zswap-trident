@@ -15,7 +15,7 @@ describe("MasterDeployer", function () {
     this.ConstantProductPoolFactory = await ethers.getContractFactory("ConstantProductPoolFactory");
     this.BentoBox = await ethers.getContractFactory("BentoBoxV1");
     this.ERC20 = await ethers.getContractFactory("ERC20Mock");
-    this.sushi = await this.ERC20.deploy("SushiToken", "SUSHI", ethers.constants.MaxUint256);
+    this.sushi = await this.ERC20.deploy("ZSwapToken", "SUSHI", ethers.constants.MaxUint256);
     await this.sushi.deployed();
     this.WETH9 = await ethers.getContractFactory("WETH9");
     this.weth = await this.WETH9.deploy();
